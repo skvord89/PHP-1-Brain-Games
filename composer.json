@@ -1,0 +1,11 @@
+{
+    "name": "skvord89/php-brain-games",
+    "description": "Set of CLI-games",
+    "authors": [
+        {
+            "name": "Denis Skvortsov",
+            "email": "skvord89@gmail.com"
+        }
+    ],
+    "require": {}
+}
