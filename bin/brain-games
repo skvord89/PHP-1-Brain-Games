@@ -4,6 +4,6 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use BrainGames\Cli;
+use function BrainGames\Cli\run;
 
-Cli\run();
+run();
