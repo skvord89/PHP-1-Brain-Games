@@ -10,6 +10,9 @@
     "bin": [
         "bin/brain-games"
     ],
+    "autoload": {
+        "files": ["src/Cli.php"]
+    },
     "license": "MIT",
     "require": {},
     "require-dev": {
