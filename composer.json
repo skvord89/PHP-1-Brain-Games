@@ -10,5 +10,6 @@
     "bin": [
         "bin/brain-games"
     ],
+    "license": "MIT",
     "require": {}
 }
