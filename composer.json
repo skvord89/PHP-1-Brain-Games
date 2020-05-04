@@ -11,5 +11,8 @@
         "bin/brain-games"
     ],
     "license": "MIT",
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    }
 }
