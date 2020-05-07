@@ -9,10 +9,11 @@
     ],
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "autoload": {
-        "files": ["src/Cli.php", "src/BrainEven.php"]
+        "files": ["src/Cli.php", "src/BrainEven.php", "src/BrainCalc.php"]
     },
     "license": "MIT",
     "require": {
