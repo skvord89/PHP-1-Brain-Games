@@ -7,7 +7,13 @@ use function BrainGames\GameFlow\gameFlow;
 function braineven()
 {
     $gameSet = generateGameSet();
-    gameFlow($gameSet);
+    $greeting = generateGreeting();
+    gameFlow($greeting, $gameSet);
+}
+
+function generateGreeting()
+{
+    return "Answer \"yes\" if the number is even, otherwise answer \"no\".";
 }
 
 function generateGameSet()

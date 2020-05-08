@@ -5,9 +5,10 @@ namespace BrainGames\GameFlow;
 use function cli\line;
 use function cli\prompt;
 
-function gameFlow($roundSet)
+function gameFlow($greeting, $roundSet)
 {
     line('Welcome to  the Brain Games!');
+    line("{$greeting}");
     line("");
     $userName = prompt('May I have your name?');
     line("Hello, {$userName}\n");
