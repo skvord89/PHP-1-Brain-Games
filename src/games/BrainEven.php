@@ -2,34 +2,21 @@
 
 namespace BrainGames\Games\BrainEven;
 
-use function cli\line;
-use function cli\prompt;
+use function BrainGames\GameFlow\gameFlow;
 
 function braineven()
 {
-    line('Welcome to  the Brain Games!');
-    line("");
-    $userName = prompt('May I have your name?');
-    line("Hello, {$userName}\n");
+    $gameSet = generateGameSet();
+    gameFlow($gameSet);
+}
 
-    $winnedRounds = 0;
-
-    for ($gameRound = 0; $gameRound < 3; $gameRound += 1) {
+function generateGameSet()
+{
+    $gameSet = [];
+    for ($round = 0; $round < 3; $round += 1) {
         $questionNumber = rand(1, 99);
         $correctAnswer = ($questionNumber % 2 === 0) ? 'yes' : 'no';
-
-        line("Question: {$questionNumber}");
-        $userAnswer = prompt("Your answer");
-        if ($correctAnswer === $userAnswer) {
-            line('Correct!');
-            $winnedRounds += 1;
-        } else {
-            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
-            line("Let's try again, {$userName}!");
-            break;
-        }
+        $gameSet[] = [$questionNumber, $correctAnswer];
     }
-    if ($winnedRounds === 3) {
-        line("Congratulations, {$userName}!");
-    }
+    return $gameSet;
 }
