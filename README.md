@@ -9,7 +9,7 @@
 
 
 ### Brain Games: Is even?
-Player must calculate if number is odd. If it is, player must answer 'yes', otherwise 'no'.  
+Player must calculate if given number is odd. If it is, player must answer 'yes', otherwise 'no'.  
 Player wins the game if he wins 3 rounds in sequence.  
 Player lose the game if he lose at least 1 round.  
 
@@ -26,3 +26,12 @@ Player lose the game if he lose at least 1 round.
 #### How to play:
 ```$ brain-calc```  
 [![asciicast](https://asciinema.org/a/25LtUk9OkXHktNq8teIJFTNgw.svg)](https://asciinema.org/a/25LtUk9OkXHktNq8teIJFTNgw)
+
+### Brain Games: Find the GCD (greatest common divisor)!
+Player must calculate the greatest common divisor of given two numbers.  
+Player wins the game if he wins 3 rounds in sequence.  
+Player lose the game if he lose at least 1 round.  
+
+#### How to play:
+```$ brain-gcd```  
+[![asciicast](https://asciinema.org/a/BNuqqySk9GyYLVKf6fGHZq3Ym.svg)](https://asciinema.org/a/BNuqqySk9GyYLVKf6fGHZq3Ym)
