@@ -18,7 +18,7 @@ Player lose the game if he lose at least 1 round.
 [![asciicast](https://asciinema.org/a/s7zquzXmpBiw9zTWq7vFOLu5T.svg)](https://asciinema.org/a/s7zquzXmpBiw9zTWq7vFOLu5T)
 
 
-### Brain Games: Calculate it!
+### Brain Games: Calculate the result!
 Player must calculate the result of given expression.  
 Player wins the game if he wins 3 rounds in sequence.  
 Player lose the game if he lose at least 1 round.  
@@ -35,3 +35,12 @@ Player lose the game if he lose at least 1 round.
 #### How to play:
 ```$ brain-gcd```  
 [![asciicast](https://asciinema.org/a/BNuqqySk9GyYLVKf6fGHZq3Ym.svg)](https://asciinema.org/a/BNuqqySk9GyYLVKf6fGHZq3Ym)
+
+### Brain Games: Find missing element of progression!
+Player must calculate missing element of given arithmetical progression.  
+Player wins the game if he wins 3 rounds in sequence.  
+Player lose the game if he lose at least 1 round.  
+
+#### How to play:
+```$ brain-progression```  
+[![asciicast](https://asciinema.org/a/baRqZT5x8N13iZDDmb8OLs1xP.svg)](https://asciinema.org/a/baRqZT5x8N13iZDDmb8OLs1xP)
