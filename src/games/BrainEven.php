@@ -14,9 +14,9 @@ function generateGameSet()
 {
     $gameSet = [];
     for ($round = 0; $round < 3; $round += 1) {
-        $questionNumber = rand(1, 99);
-        $correctAnswer = ($questionNumber % 2 === 0) ? 'yes' : 'no';
-        $gameSet[] = [$questionNumber, $correctAnswer];
+        $question = rand(1, 99);
+        $correctAnswer = ($question % 2 === 0) ? 'yes' : 'no';
+        $gameSet[] = [$question, $correctAnswer];
     }
     return $gameSet;
 }
