@@ -16,3 +16,12 @@ Player lose the game if he lose at least 1 round.
 #### How to play:
 ```$ brain-even```  
 [![asciicast](https://asciinema.org/a/s7zquzXmpBiw9zTWq7vFOLu5T.svg)](https://asciinema.org/a/s7zquzXmpBiw9zTWq7vFOLu5T)
+
+### Brain Games: Calculate it!
+Player must calculate the result of given expression. 
+Player wins the game if he wins 3 rounds in sequence.  
+Player lose the game if he lose at least 1 round.  
+
+#### How to play:
+```$ brain-calc```  
+[![asciicast](https://asciinema.org/a/25LtUk9OkXHktNq8teIJFTNgw.svg)](https://asciinema.org/a/25LtUk9OkXHktNq8teIJFTNgw)
