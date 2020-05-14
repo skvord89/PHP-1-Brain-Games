@@ -15,7 +15,11 @@ function generateGameSet()
 {
     $gameSet = [];
     for ($round = 0; $round < 3; $round += 1) {
-        $progression = generateProgression();
+        $progressionStep = rand(1, 20);
+        $progressionBase = rand(-50, 50);
+        $progressionLength = 10;
+
+        $progression = generateProgression($progressionBase, $progressionStep, $progressionLength);
         $questionIndex = array_rand($progression);
         $correctAnswer = $progression[$questionIndex];
         $question = generateQuestion($progression, $questionIndex);
@@ -25,13 +29,10 @@ function generateGameSet()
     return $gameSet;
 }
 
-function generateProgression()
+function generateProgression($base, $step, $length)
 {
     $progression = [];
-    $step = rand(1, 20);
-    $base = rand(-50, 50);
-
-    for ($i = 0; $i < 10; $i += 1) {
+    for ($i = 0; $i < $length; $i += 1) {
         $progression[] = $base + $step * $i;
     }
 
