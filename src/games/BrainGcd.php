@@ -19,7 +19,7 @@ function generateGameSet()
         $questionNumber2 = rand(1, 99);
         $correctAnswer = findGcd($questionNumber1, $questionNumber2);
         $question = "{$questionNumber1} {$questionNumber2}";
-        $gameSet[] = [$question, $correctAnswer];
+        $gameSet[] = [$question, (string) $correctAnswer];
     }
     return $gameSet;
 }

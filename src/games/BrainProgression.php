@@ -18,13 +18,12 @@ function generateGameSet()
         $progressionStep = rand(1, 20);
         $progressionBase = rand(-50, 50);
         $progressionLength = 10;
-
         $progression = generateProgression($progressionBase, $progressionStep, $progressionLength);
         $questionIndex = array_rand($progression);
         $correctAnswer = $progression[$questionIndex];
         $question = generateQuestion($progression, $questionIndex);
 
-        $gameSet[] = [$question, $correctAnswer];
+        $gameSet[] = [$question, (string) $correctAnswer];
     }
     return $gameSet;
 }

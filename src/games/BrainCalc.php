@@ -33,7 +33,7 @@ function generateGameSet()
         }
     
         $question = "{$number1} {$operator} {$number2}";
-        $gameSet[] = [$question, $correctAnswer];
+        $gameSet[] = [$question, (string) $correctAnswer];
     }
     return $gameSet;
 }

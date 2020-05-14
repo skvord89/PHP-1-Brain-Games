@@ -17,7 +17,7 @@ function gameFlow($greeting, $roundSet)
         [$question, $correctAnswer] = $roundSet[$gameRound];
         line("Question: {$question}");
         $userAnswer = prompt("Your answer");
-        if ((string) $correctAnswer === $userAnswer) {
+        if ($correctAnswer === $userAnswer) {
             line('Correct!');
         } else {
             line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
