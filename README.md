@@ -2,7 +2,10 @@
 ![PHP CI](https://github.com/skvord89/PHP-1-Brain-Games/workflows/PHP%20CI/badge.svg)
 <a href="https://codeclimate.com/github/skvord89/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/6643f99c3022b04c9948/maintainability" /></a>
 
-**Brain Games** is a set of CLI-games with digits.
+**Brain Games** is a set of CLI-games with digits.  
+Player wins the game if he wins 3 rounds in sequence.  
+Player loses the game if he loses at least 1 round.  
+
 #### How to install:
 ```$ composer global require skvord89/php-brain-games```  
 [![asciicast](https://asciinema.org/a/wQ1WCW9mv41pcITklcxXCh2RF.svg)](https://asciinema.org/a/wQ1WCW9mv41pcITklcxXCh2RF)
@@ -10,8 +13,6 @@
 
 ### Brain Games: Is even?
 Player must calculate if given number is odd. If it is, player must answer 'yes', otherwise 'no'.  
-Player wins the game if he wins 3 rounds in sequence.  
-Player lose the game if he lose at least 1 round.  
 
 #### How to play:
 ```$ brain-even```  
@@ -20,8 +21,6 @@ Player lose the game if he lose at least 1 round.
 
 ### Brain Games: Calculate the result!
 Player must calculate the result of given expression.  
-Player wins the game if he wins 3 rounds in sequence.  
-Player lose the game if he lose at least 1 round.  
 
 #### How to play:
 ```$ brain-calc```  
@@ -29,8 +28,6 @@ Player lose the game if he lose at least 1 round.
 
 ### Brain Games: Find the GCD (greatest common divisor)!
 Player must calculate the greatest common divisor of given two numbers.  
-Player wins the game if he wins 3 rounds in sequence.  
-Player lose the game if he lose at least 1 round.  
 
 #### How to play:
 ```$ brain-gcd```  
@@ -38,9 +35,14 @@ Player lose the game if he lose at least 1 round.
 
 ### Brain Games: Find missing element of progression!
 Player must calculate missing element of given arithmetical progression.  
-Player wins the game if he wins 3 rounds in sequence.  
-Player lose the game if he lose at least 1 round.  
 
 #### How to play:
 ```$ brain-progression```  
 [![asciicast](https://asciinema.org/a/baRqZT5x8N13iZDDmb8OLs1xP.svg)](https://asciinema.org/a/baRqZT5x8N13iZDDmb8OLs1xP)
+
+### Brain Games: Is prime?
+Player must calculate if given number is prime. If it is, player must answer 'yes', otherwise 'no'.  
+
+#### How to play:
+```$ brain-prime```  
+[![asciicast](https://asciinema.org/a/b2yiXOfCOehMkgwxJi3Xse8cm.svg)](https://asciinema.org/a/b2yiXOfCOehMkgwxJi3Xse8cm)
