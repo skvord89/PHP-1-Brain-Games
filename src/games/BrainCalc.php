@@ -16,24 +16,23 @@ function generateGameSet()
     $gameSet = [];
     $operators = ['+', '-', '*'];
     for ($round = 0; $round < 3; $round += 1) {
-        $questionOperator = $operators[array_rand($operators)];
-        $questionNumber1 = rand(1, 99);
-        $questionNumber2 = rand(1, 99);
+        $operator = $operators[array_rand($operators)];
+        $number1 = rand(1, 99);
+        $number2 = rand(1, 99);
     
-        switch ($questionOperator) {
+        switch ($operator) {
             case '+':
-                $correctAnswer = $questionNumber1 + $questionNumber2;
+                $correctAnswer = $number1 + $number2;
                 break;
             case '-':
-                $correctAnswer = $questionNumber1 - $questionNumber2;
+                $correctAnswer = $number1 - $number2;
                 break;
             case '*':
-                $correctAnswer = $questionNumber1 * $questionNumber2;
+                $correctAnswer = $number1 * $number2;
                 break;
         }
-
     
-        $question = "{$questionNumber1} {$questionOperator} {$questionNumber2}";
+        $question = "{$number1} {$operator} {$number2}";
         $gameSet[] = [$question, $correctAnswer];
     }
     return $gameSet;
