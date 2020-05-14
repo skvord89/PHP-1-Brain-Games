@@ -7,13 +7,8 @@ use function BrainGames\GameFlow\gameFlow;
 function brainprogression()
 {
     $gameSet = generateGameSet();
-    $greeting = generateGreeting();
+    $greeting = "What number is missing in the progression?";
     gameFlow($greeting, $gameSet);
-}
-
-function generateGreeting()
-{
-    return "What number is missing in the progression?";
 }
 
 function generateGameSet()

@@ -7,13 +7,8 @@ use function BrainGames\GameFlow\gameFlow;
 function brainprime()
 {
     $gameSet = generateGameSet();
-    $greeting = generateGreeting();
+    $greeting = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
     gameFlow($greeting, $gameSet);
-}
-
-function generateGreeting()
-{
-    return "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
 }
 
 function generateGameSet()

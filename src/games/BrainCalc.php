@@ -7,13 +7,8 @@ use function BrainGames\GameFlow\gameFlow;
 function braincalc()
 {
     $gameSet = generateGameSet();
-    $greeting = generateGreeting();
+    $greeting = "What is the result of the expression?";
     gameFlow($greeting, $gameSet);
-}
-
-function generateGreeting()
-{
-    return "What is the result of the expression?";
 }
 
 function generateGameSet()

@@ -7,13 +7,8 @@ use function BrainGames\GameFlow\gameFlow;
 function braingcd()
 {
     $gameSet = generateGameSet();
-    $greeting = generateGreeting();
+    $greeting = "Find the greatest common divisor of given numbers.";
     gameFlow($greeting, $gameSet);
-}
-
-function generateGreeting()
-{
-    return "Find the greatest common divisor of given numbers.";
 }
 
 function generateGameSet()
