@@ -4,6 +4,8 @@ namespace BrainGames\Games\BrainCalc;
 
 use function BrainGames\GameFlow\gameFlow;
 
+use const BrainGames\GameFlow\MAX_ROUNDS;
+
 function braincalc()
 {
     $gameSet = generateGameSet();
@@ -15,7 +17,7 @@ function generateGameSet()
 {
     $gameSet = [];
     $operators = ['+', '-', '*'];
-    for ($round = 0; $round < 3; $round += 1) {
+    for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
         $operator = $operators[array_rand($operators)];
         $number1 = rand(1, 99);
         $number2 = rand(1, 99);

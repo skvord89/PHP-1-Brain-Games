@@ -4,6 +4,8 @@ namespace BrainGames\Games\BrainGcd;
 
 use function BrainGames\GameFlow\gameFlow;
 
+use const BrainGames\GameFlow\MAX_ROUNDS;
+
 function braingcd()
 {
     $gameSet = generateGameSet();
@@ -14,7 +16,7 @@ function braingcd()
 function generateGameSet()
 {
     $gameSet = [];
-    for ($round = 0; $round < 3; $round += 1) {
+    for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
         $questionNumber1 = rand(1, 99);
         $questionNumber2 = rand(1, 99);
         $correctAnswer = findGcd($questionNumber1, $questionNumber2);

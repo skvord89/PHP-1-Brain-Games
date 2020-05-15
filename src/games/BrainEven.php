@@ -4,6 +4,8 @@ namespace BrainGames\Games\BrainEven;
 
 use function BrainGames\GameFlow\gameFlow;
 
+use const BrainGames\GameFlow\MAX_ROUNDS;
+
 function braineven()
 {
     $gameSet = generateGameSet();
@@ -14,7 +16,7 @@ function braineven()
 function generateGameSet()
 {
     $gameSet = [];
-    for ($round = 0; $round < 3; $round += 1) {
+    for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
         $question = rand(1, 99);
         $correctAnswer = ($question % 2 === 0) ? 'yes' : 'no';
         $gameSet[] = [$question, $correctAnswer];

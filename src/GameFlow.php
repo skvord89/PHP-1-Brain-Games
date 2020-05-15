@@ -5,6 +5,8 @@ namespace BrainGames\GameFlow;
 use function cli\line;
 use function cli\prompt;
 
+const MAX_ROUNDS = 3;
+
 function gameFlow($greeting, $roundSet)
 {
     line('Welcome to  the Brain Games!');
@@ -13,7 +15,7 @@ function gameFlow($greeting, $roundSet)
     $userName = prompt('May I have your name?');
     line("Hello, {$userName}\n");
 
-    for ($gameRound = 0; $gameRound < 3; $gameRound += 1) {
+    for ($gameRound = 0; $gameRound < MAX_ROUNDS; $gameRound += 1) {
         [$question, $correctAnswer] = $roundSet[$gameRound];
         line("Question: {$question}");
         $userAnswer = prompt("Your answer");
