@@ -8,7 +8,7 @@ Player loses the game if he loses at least 1 round.
 
 #### How to install:
 ```$ composer global require skvord89/php-brain-games```  
-[![asciicast](https://asciinema.org/a/wQ1WCW9mv41pcITklcxXCh2RF.svg)](https://asciinema.org/a/wQ1WCW9mv41pcITklcxXCh2RF)
+[![asciicast](https://asciinema.org/a/s1GCOiW4T2ALP0eDSk3QJ6WQu.svg)](https://asciinema.org/a/s1GCOiW4T2ALP0eDSk3QJ6WQu)
 
 
 ### Brain Games: Is even?
