@@ -17,9 +17,9 @@ function generateGameSet()
 {
     $gameSet = [];
     for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
-        $questionNumber = rand(1, 99);
-        $correctAnswer = isPrime($questionNumber) ? 'yes' : 'no';
-        $gameSet[] = [$questionNumber, $correctAnswer];
+        $number = rand(1, 99);
+        $correctAnswer = isPrime($number) ? 'yes' : 'no';
+        $gameSet[] = [$number, $correctAnswer];
     }
     return $gameSet;
 }
