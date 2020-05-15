@@ -17,10 +17,10 @@ function generateGameSet()
 {
     $gameSet = [];
     for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
-        $questionNumber1 = rand(1, 99);
-        $questionNumber2 = rand(1, 99);
-        $correctAnswer = findGcd($questionNumber1, $questionNumber2);
-        $question = "{$questionNumber1} {$questionNumber2}";
+        $number1 = rand(1, 99);
+        $number2 = rand(1, 99);
+        $correctAnswer = findGcd($number1, $number2);
+        $question = "{$number1} {$number2}";
         $gameSet[] = [$question, (string) $correctAnswer];
     }
     return $gameSet;
