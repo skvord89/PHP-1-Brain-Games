@@ -4,7 +4,7 @@ namespace BrainGames\Games\BrainProgression;
 
 use function BrainGames\GameFlow\gameFlow;
 
-use const BrainGames\GameFlow\MAX_ROUNDS;
+use const BrainGames\GameFlow\MAX_ROUNDS_COUNT;
 
 function brainprogression()
 {
@@ -16,7 +16,7 @@ function brainprogression()
 function generateGameData()
 {
     $gameData = [];
-    for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
+    for ($round = 0; $round < MAX_ROUNDS_COUNT; $round += 1) {
         $progressionStep = rand(1, 20);
         $progressionBase = rand(-50, 50);
         $progressionLength = 10;
