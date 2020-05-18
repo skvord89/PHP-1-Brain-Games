@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const MAX_ROUNDS = 3;
 
-function gameFlow($greeting, $roundSet)
+function gameFlow($greeting, $gameData)
 {
     line('Welcome to  the Brain Games!');
     line("{$greeting}");
@@ -16,7 +16,7 @@ function gameFlow($greeting, $roundSet)
     line("Hello, {$userName}\n");
 
     for ($gameRound = 0; $gameRound < MAX_ROUNDS; $gameRound += 1) {
-        [$question, $correctAnswer] = $roundSet[$gameRound];
+        [$question, $correctAnswer] = $gameData[$gameRound];
         line("Question: {$question}");
         $userAnswer = prompt("Your answer");
         if ($correctAnswer === $userAnswer) {

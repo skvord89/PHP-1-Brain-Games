@@ -8,20 +8,20 @@ use const BrainGames\GameFlow\MAX_ROUNDS;
 
 function brainprime()
 {
-    $gameSet = generateGameSet();
+    $gameData = generateGameData();
     $greeting = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
-    gameFlow($greeting, $gameSet);
+    gameFlow($greeting, $gameData);
 }
 
-function generateGameSet()
+function generateGameData()
 {
-    $gameSet = [];
+    $gameData = [];
     for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
         $number = rand(1, 99);
         $correctAnswer = isPrime($number) ? 'yes' : 'no';
-        $gameSet[] = [$number, $correctAnswer];
+        $gameData[] = [$number, $correctAnswer];
     }
-    return $gameSet;
+    return $gameData;
 }
 
 function isPrime($num)

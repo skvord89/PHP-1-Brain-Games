@@ -8,22 +8,22 @@ use const BrainGames\GameFlow\MAX_ROUNDS;
 
 function braingcd()
 {
-    $gameSet = generateGameSet();
+    $gameData = generateGameData();
     $greeting = "Find the greatest common divisor of given numbers.";
-    gameFlow($greeting, $gameSet);
+    gameFlow($greeting, $gameData);
 }
 
-function generateGameSet()
+function generateGameData()
 {
-    $gameSet = [];
+    $gameData = [];
     for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
         $number1 = rand(1, 99);
         $number2 = rand(1, 99);
         $correctAnswer = findGcd($number1, $number2);
         $question = "{$number1} {$number2}";
-        $gameSet[] = [$question, (string) $correctAnswer];
+        $gameData[] = [$question, (string) $correctAnswer];
     }
-    return $gameSet;
+    return $gameData;
 }
 
 function findGcd($num1, $num2)

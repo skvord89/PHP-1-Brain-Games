@@ -8,14 +8,14 @@ use const BrainGames\GameFlow\MAX_ROUNDS;
 
 function brainprogression()
 {
-    $gameSet = generateGameSet();
+    $gameData = generateGameData();
     $greeting = "What number is missing in the progression?";
-    gameFlow($greeting, $gameSet);
+    gameFlow($greeting, $gameData);
 }
 
-function generateGameSet()
+function generateGameData()
 {
-    $gameSet = [];
+    $gameData = [];
     for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
         $progressionStep = rand(1, 20);
         $progressionBase = rand(-50, 50);
@@ -25,9 +25,9 @@ function generateGameSet()
         $correctAnswer = $progression[$questionIndex];
         $question = generateQuestion($progression, $questionIndex);
 
-        $gameSet[] = [$question, (string) $correctAnswer];
+        $gameData[] = [$question, (string) $correctAnswer];
     }
-    return $gameSet;
+    return $gameData;
 }
 
 function generateProgression($base, $step, $length)

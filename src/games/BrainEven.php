@@ -8,18 +8,18 @@ use const BrainGames\GameFlow\MAX_ROUNDS;
 
 function braineven()
 {
-    $gameSet = generateGameSet();
+    $gameData = generateGameData();
     $greeting = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    gameFlow($greeting, $gameSet);
+    gameFlow($greeting, $gameData);
 }
 
-function generateGameSet()
+function generateGameData()
 {
-    $gameSet = [];
+    $gameData = [];
     for ($round = 0; $round < MAX_ROUNDS; $round += 1) {
         $question = rand(1, 99);
         $correctAnswer = ($question % 2 === 0) ? 'yes' : 'no';
-        $gameSet[] = [$question, $correctAnswer];
+        $gameData[] = [$question, $correctAnswer];
     }
-    return $gameSet;
+    return $gameData;
 }
